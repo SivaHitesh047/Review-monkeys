@@ -1,0 +1,371 @@
+body
+{
+   background-image: url("../images/1.jpg");
+   background-size: cover; 
+}
+
+.button
+{
+  position: absolute;
+  left:1170px ;
+  border: none;
+  outline: none;
+  width:80px;
+  background:none;
+  color:black;
+  padding:5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin:12px 0;	
+}
+
+#intro
+{
+  position: absolute;
+  top:1.5%;
+  left:10%;
+  width: 1000px;
+  height: 50px;
+  align-content: center;
+  border-radius: 15px;
+  color: rgb(12, 16, 16);
+  background-color: rgb(243, 252, 127); 
+}
+
+#intro p
+{
+  position: absolute;
+  top:-20px;
+  left:35px;
+  font-size: 30px;  
+}
+
+#name  
+{
+    position: absolute;
+    top:20%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#name p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#age  
+{
+    position: absolute;
+    top:50%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#age p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#email  
+{
+    position: absolute;
+    top:80%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#email p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+#phone  
+{
+    position: absolute;
+    top:110%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#phone p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#address
+{
+    position: absolute;
+    top:140%;
+    left:10%;
+    width: 1000px;
+    height: 250px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#address p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#rate  
+{
+    position: absolute;
+    top:190%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#rate p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#doc  
+{
+    position: absolute;
+    top:220%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#doc p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#most  
+{
+    position: absolute;
+    top:250%;
+    left:10%;
+    width: 1000px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#most p
+{
+  position: relative;
+  top:-5%;
+  left:4%;
+  font-size: 30px;   
+}
+
+#comments
+{
+    position: absolute;
+    top:290%;
+    left:10%;
+    width: 1000px;
+    height: 300px;
+    align-content: center;
+    border-radius: 15px;
+    color: rgb(12, 16, 16);
+    background-color: rgb(243, 252, 127); 
+}
+
+#comments p
+{
+  position: relative;
+  top:-4%;
+  left:5%;
+  font-size: 30px;   
+}
+
+#textarea
+{
+  position: relative;
+  left:5%;  
+}
+
+#btn
+{
+   position: absolute;
+   width:8%;
+   height:4%;
+   top:23px;
+   left:900px; 
+}
+
+#butn
+{
+   position: absolute;
+   top:15px;
+   left:700px; 
+}
+
+#button
+{
+   position: absolute;
+   width:8%;
+   height:4%;
+   top:350%;
+   left:80%; 
+}
+
+.drop
+{
+  border: cyan;
+  height: 20px;
+  position: absolute;
+  left: 380px;
+  top:17px;
+}
+
+#rev
+{
+ width: 1000px;
+ height: 200px;
+ border-radius: 15px;
+ position: absolute;
+ background-color:rgb(243, 252, 127) ; 
+}
+
+.drop1
+{
+  border: cyan;
+  height: 20px;
+  position: absolute;
+  left: 300px;
+  top:17px;
+}
+
+.drop2
+{
+  border: cyan;
+  height: 20px;
+  position: absolute;
+  left: 650px;
+  top:25px;
+}
+
+.textbox
+{
+  width:90%;
+  position: absolute;
+  overflow: hidden;
+  font-size: 10px;
+  top:60px;
+  left:40px; 
+  padding:8px 0;
+  margin:8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.textbox1
+{
+  width:90%;
+  position: absolute;
+  overflow: hidden;
+  font-size: 10px;
+  top:100px;
+  left:40px; 
+  padding:8px 0;
+  margin:8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.textbox2
+{
+  width:90%;
+  position: absolute;
+  overflow: hidden;
+  font-size: 10px;
+  top:140px;
+  left:40px; 
+  padding:8px 0;
+  margin:8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.textbox input
+{
+  border: none;
+  outline: none;
+  background: none;
+  color:rgb(14, 13, 13);
+  font-size: 18px;
+  width:80%;
+  float: left;
+  margin:0 10px;	
+}
+
+.textbox1 input
+{
+  border: none;
+  outline: none;
+  background: none;
+  color:rgb(14, 13, 13);
+  font-size: 18px;
+  width:80%;
+  float: left;
+  margin:0 10px;	
+}
+
+.textbox2 input
+{
+  border: none;
+  outline: none;
+  background: none;
+  color:rgb(14, 13, 13);
+  font-size: 18px;
+  width:80%;
+  float: left;
+  margin:0 10px;	
+}

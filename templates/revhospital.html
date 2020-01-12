@@ -1,0 +1,34 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/hospital.css">
+   <title>Hospital</title>
+ </head>
+  <body>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header> 
+   <form method="POST" action="/revHospital"> 	 
+  <div id=intro>
+   <p>  
+    Hospital review
+   </p>
+   <select class="drop" name="hname">
+    <option value="none">Select Hospital</option>
+    {% for value in orgnames %}
+    <option value="{{value}}" >
+      {{value}}
+    </option>
+    {% endfor %}
+  </select>  
+  </div>
+  <select class="drop2" name="dname">
+    <option value="none">Select department </option>
+    <option value="ortho">Orthopedics</option>
+    <option value="gyna">Obstetrics and gynaecology</option>
+    <option value="neuro">Neurology</option>
+    <option value="cardi">Cardiology</option></select>
+  </div>
+  <input type="submit" value="submit" id="btn">
+  </form>
+  </body>
+  </html>

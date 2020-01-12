@@ -1,0 +1,27 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
+   <title>Restaurant</title>
+ </head>
+ <body>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header>
+  <form method="POST" action="/revrestaurant">   	 
+  <div id=intro>
+   <p>
+    Restaurant review
+   </p>
+   <select class="drop" name="rname">
+    <option value="none">Select Restaurant</option>
+    {% for value in orgnames %}
+    <option value="{{value}}" >
+      {{value}}
+    </option>
+    {% endfor %}
+  </select>  
+    <input type="submit" value="submit" id="btn">
+  </div>
+  </form>
+</body>
+  </html>

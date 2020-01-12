@@ -1,0 +1,47 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/hospital.css">
+   <title>Institute</title>
+ </head>
+  <body>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header>
+   <form method="POST" action="/revinstitute">  	 
+  <div id=intro>
+   <p>
+    Institute review
+   </p>
+    <select class="drop" name="iname">
+      <option value="none">Select Institute</option>
+      {% for value in orgnames %}
+      <option value="{{value}}" >
+        {{value}}
+      </option>
+      {% endfor %}
+    </select>  
+    <input type="submit" value="submit" id="butn">
+  </div>
+  </form>
+  {% for i in range(size) %}
+  <div id="rev" style="position:relative; top: 100px; left: 130px; margin-top: 30px;">
+  <div style="font-size: 27px; font:bold ; left: 2px;font: 'Candice'; ">  
+  {{ datalist[0] }} {{ data[i][0] }}
+  </div>
+  <br>
+  <div style="font-size:18px;font: 'Candice';">
+
+    {% for j in range(1,cols-1) %}
+    {{ datalist[j] }} {{ data[i][j] }}
+    <br>
+    {% endfor %}
+  </div>
+  <br>
+  <div style="font-size: 21px; font-family: Arial, Helvetica, sans-serif;">
+    {{ datalist[cols-1] }} 
+    {{ data[i][cols-1] }}
+  </div>
+  </div>
+  {% endfor %}
+  </body>
+  </html>

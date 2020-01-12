@@ -1,0 +1,86 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/hospital.css">
+   <title>Institute</title>
+ </head>
+  <body>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header>
+   <form method="POST" action="/Instituteform">  	 
+  <div id=intro>
+   <p>
+    Institute review
+   </p>
+   <select class="drop" name="iname">
+    <option value="none">Select Institute</option>
+    {% for value in orgnames %}
+    <option value="{{value}}" >
+      {{value}}
+    </option>
+    {% endfor %}
+  </select>  
+  </div>
+  <div id="name">
+      <p>Your Name(*)</p>
+      <div class="textbox">
+        <input type="text" placeholder="short answer text" name="uname" value="">
+      </div>
+  </div>
+</div>
+<div id="age">
+    <p>Your Department(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="course" value="">
+    </div>
+</div>
+  <div id="email">
+    <p>Email id</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="email" value="">
+    </div>
+  </div>
+  <div id="phone">
+    <p>Phone Number</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="phno" value="">
+    </div>
+  </div>
+  <div id="address">
+    <p>Address</p>
+    <div class="textbox">
+      <input type="text" placeholder="First address line" name="add1" value="">   
+    </div>
+    <div class="textbox1">
+        <input type="text" placeholder="Second address line" name="add2" value="">   
+    </div>
+    <div class="textbox2">
+        <input type="text" placeholder="Third address line" name="add3" value="">   
+    </div>
+  </div>
+  <div id="rate">
+    <p>Rate acads out of 10(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="rate1" value="">
+    </div>
+  </div>
+  <div id="doc">
+    <p>Rate extra and co curricular activities out of 10(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="rate2" value="">
+    </div>
+  </div>
+  <div id="most">
+    <p>How recommandable is the institute to the students out of 10(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="rate3" value="">
+    </div>
+  </div>
+  <div id="comments">
+   <p>Any thing you want to tell about the institute</p>
+   <textarea id='textarea' cols=120 rows=10 name="cmnts"></textarea>
+  </div>
+  <input type="submit" value="submit" id="button">
+  </form>
+ </body>     
+</html>

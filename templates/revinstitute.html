@@ -1,0 +1,27 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/hospital.css">
+   <title>Institute</title>
+ </head>
+  <body>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header>
+   <form method="POST" action="/revinstitute">  	 
+  <div id=intro>
+   <p>
+    Institute review
+   </p>
+   <select class="drop" name="iname">
+    <option value="none">Select Institute</option>
+    {% for value in orgnames %}
+    <option value="{{value}}" >
+      {{value}}
+    </option>
+    {% endfor %}
+  </select>  
+    <input type="submit" value="submit" id="butn">
+  </div>
+  </form>
+  </body>
+  </html>

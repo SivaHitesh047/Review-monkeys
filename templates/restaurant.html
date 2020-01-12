@@ -1,0 +1,72 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
+   <title>Restaurant</title>
+ </head>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header>
+  <form method="POST" action="/restaurantform">   	 
+  <div id=intro>
+   <p>
+    Restaurant review
+   </p>
+   <select class="drop" name="rname">
+  <option value="none">Select Restaurant</option>
+  {% for value in orgnames %}
+  <option value="{{value}}" >
+    {{value}}
+  </option>
+  {% endfor %}
+</select>  
+</div>
+  <div id="name">
+      <p>Your Name(*)</p>
+      <div class="textbox">
+        <input type="text" placeholder="short answer text" name="uname" value="">
+      </div>
+  </div>
+  <div id="email">
+    <p>Email id</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="email" value="">
+    </div>
+  </div>
+  <div id="phone">
+    <p>Phone Number</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="phno" value="">
+    </div>
+  </div>
+  <div id="address">
+    <p>Address</p>
+    <div class="textbox">
+      <input type="text" placeholder="First address line" name="address1" value="">   
+    </div>
+    <div class="textbox1">
+        <input type="text" placeholder="Second address line" name="address2" value="">   
+    </div>
+    <div class="textbox2">
+        <input type="text" placeholder="Third address line" name="address3" value="">   
+    </div>
+  </div>
+  <div id="rate">
+    <p>Rate us out of 10(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="rate" value="">
+    </div>
+  </div>
+  <div id="most">
+    <p>What did you like the most in our Restaurant(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="most" value="">
+    </div>
+  </div>
+  <div id="comments">
+   <p>Comments/Suggestions</p>
+   <textarea id='textarea' cols=120 rows=10 name="cmnts"></textarea>
+  </div>
+  <input type="submit" value="submit" id="button">
+</form> 
+</body>     
+</html>

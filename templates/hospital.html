@@ -1,0 +1,95 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="../static/css/hospital.css">
+   <title>Hospital</title>
+ </head>
+  <body>
+    <header id="header">
+      <a href="/"><input type="button" class="button" value="Home"></a>
+    </header> 
+   <form method="POST" action="/Hospitalform"> 	 
+  <div id=intro>
+   <p>  
+    Hospital review
+   </p>
+   <select class="drop" name="hname">
+    <option value="none">Select Hospital</option>
+    {% for value in orgnames %}
+    <option value="{{value}}" >
+      {{value}}
+    </option>
+    {% endfor %}
+  </select>  
+  </div>
+  <select class="drop2" name="dname">
+    <option value="none">Select department </option>
+    <option value="ortho">Orthopedics</option>
+    <option value="gyna">Obstetrics and gynaecology</option>
+    <option value="neuro">Neurology</option>
+    <option value="cardi">Cardiology</option></select>
+  </div>
+
+  </div>
+  <div id="name">
+      <p>Your Name(*)</p>
+      <div class="textbox">
+        <input type="text" placeholder="short answer text" name="uname" value="">
+      </div>
+  </div>
+</div>
+<div id="age">
+    <p>Your Age(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="age" value="">
+    </div>
+</div>
+  <div id="email">
+    <p>Email id</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="email" value="">
+    </div>
+  </div>
+  <div id="phone">
+    <p>Phone Number</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="phno" value="">
+    </div>
+  </div>
+  <div id="address">
+    <p>Address</p>
+    <div class="textbox">
+      <input type="text" placeholder="First address line" name="add1" value="">   
+    </div>
+    <div class="textbox1">
+        <input type="text" placeholder="Second address line" name="add2" value="">   
+    </div>
+    <div class="textbox2">
+        <input type="text" placeholder="Third address line" name="add3" value="">   
+    </div>
+  </div>
+  <div id="rate">
+    <p>What's your unhealthiness?(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="rate" value="">
+    </div>
+  </div>
+  <div id="doc">
+    <p>How was the overall Treatment?(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="doc" value="">
+    </div>
+  </div>
+  <div id="most">
+    <p>How recommandable is our Hospital to the people out of 10(*)</p>
+    <div class="textbox">
+      <input type="text" placeholder="short answer text" name="most" value="">
+    </div>
+  </div>
+  <div id="comments">
+   <p>Comments/Suggestions</p>
+   <textarea id='textarea' cols=120 rows=10 name="cmnts"></textarea>
+  </div>
+  <input type="submit" value="submit" id="button">
+  </form>
+ </body>     
+</html>

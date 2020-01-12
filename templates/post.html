@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Post</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/post.css">
+    <script type="text/javascript" src="../static/js/events.js"></script>
+  </head>
+<body>
+<div id='intro'>    
+<p>Send a request to display your organisation in the review box here.</p>
+</div>
+<a href="/showLogin"><input type="button" class="button" value="Logout"></a>
+<form method="POST", action="/getPost">
+    <div id="login-box">
+        <h1>Request-box</h1>
+        <select class="drop" name="ortype">
+            <option value="none">Select Organisation</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Hospital">Hospital</option>
+            <option value="Institute">Institute</option>
+        </select>
+        <div class="textbox">
+            <input type="text" placeholder="Organisation name" name="orname" value="">
+        </div>
+        <div id="question">
+            <p>Why should we display your organisation in review-box?(SOP)</p>
+            <textarea id='textarea' cols=25 rows=4 name="sop"></textarea>
+        </div>		
+        <input class="btn" type="submit" name="submit" value="Request">
+    </div>    
+</form>
+</body>   
+ 
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>REQUEST</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/hospital.css">
+        <script type="text/javascript" src="../static/js/events.js"></script>
+    </head>
+    <body>
+
+        <header id="header">
+            <a href="/showadmin"><input type="button" class="button" value="Logout"></a>
+            <a href="/request"><input type="button" value="Show responses" style="position: absolute; top:8px; left:550px;"></a>
+        </header>
+        {% for i in range(size) %}
+        <div id='rev' style="position:relative; top: 100px; left: 130px; margin-top: 30px;">
+            <div style="font-size:21px;font: 'Candice';">
+                {% set ns = namespace(orgdetails = []) %}
+                {% for j in range(0,cols) %}
+                {{ ns.orgdetails.append(data[i][j]) }}
+                {{ datalist[j] }}{{ data[i][j] }}
+                <br>
+                {% endfor %}
+            </div>
+            
+            <form action="{{url_for('accdec',otype=ns.orgdetails[0],oname=ns.orgdetails[1]) }}" method="POST">
+                <input type="submit" name="accbutton" value="Accept">
+            </form>
+            
+        </div>
+    {% endfor %}
+
+    </body>
+</html>
