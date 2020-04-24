@@ -26,6 +26,7 @@ Review monkeys is a basic website where you can review organisations like restau
 
 #### Something I would like to say
 ****
+  - For more information, see Zense projectreport.pdf file.
   - This website is still under devolopment, so you may find some bugs.
   - Give a star if you have liked my work.
   
