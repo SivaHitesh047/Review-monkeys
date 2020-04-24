@@ -6,7 +6,7 @@ Review monkeys is a basic website where you can review organisations like restau
 
 ### Requirments
 ****  
-- python3
+  - python3
   - [Install](https://dev.mysql.com/downloads/workbench/5.2.html) MySql workbench to handle the database. 
   - 100% zoom in the web broswer is recommended. 
   
