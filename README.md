@@ -21,8 +21,8 @@ Review monkeys is a basic website where you can review organisations like restau
 
 ### Author
 ****
-  - K. SIVA HITESH
-  - GitHub: [hackman047](https://github.com/hackman047)
+  - K. Siva Hitesh
+  - GitHub: [SivaHitesh047](https://github.com/SivaHitesh047)
 
 #### Something I would like to say
 ****
